@@ -3,16 +3,16 @@ requires = ["hatchling>=1.26.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "byteutils"
+name = "gpybyte"
 version = "0.1.0"
-description = "Универсальная библиотека для работы с единицами измерения памяти"
+description = "GPYByte - библиотека для работы с единицами памяти (поддержка стандарта JPYByte: IPY/HPY/GPY/JPY)"
 readme = "README.md"
 authors = [
-    {name = "Gosha", email = "borapro727@.com"}
+    {name = "GPYByte Team"}
 ]
 license = {text = "MIT"}
 requires-python = ">=3.8"
-keywords = ["memory", "units", "converter", "bytes", "kilobytes", "megabytes"]
+keywords = ["memory", "units", "gpybyte", "jpybyte", "converter", "bytes", "gis"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
@@ -21,14 +21,15 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: GIS",
 ]
 
 [project.urls]
-Homepage = "https://github.com/forumvmatr67-oss/byteutils-project"
-Repository = "https://github.com/forumvmatr67-oss/byteutils-project"
+Homepage = "https://github.com/yourusername/gpybyte"
+Repository = "https://github.com/yourusername/gpybyte"
 
 [project.scripts]
-byteutils = "byteutils.cli:main"
+gpybyte = "gpybyte.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/byteutils"]
+packages = ["src/gpybyte"]
