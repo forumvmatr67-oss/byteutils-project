@@ -21,4 +21,4 @@
 ## 📦 Установка
 
 ```bash
-pip install byteutils
+pip install gpybyte
